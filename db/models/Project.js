@@ -1,7 +1,6 @@
-const { Types } = require('mongoose');
 const mongoose = require('../connection');
 
-const ProjectSchema = mongoose.Schema({
+const ProjectSchema = new mongoose.Schema({
 	image: String,
 	author: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 	title: String,
