@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //controllers
 app.use('/users', usersController);
-app.use('/projects', projectsController);
+app.use('/', projectsController);
 
 app.set('port', process.env.PORT || 8001);
 
