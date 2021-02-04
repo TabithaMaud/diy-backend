@@ -5,7 +5,6 @@ const User = require('../db/models/User');
 
 router.get('/projects', (req, res, next) => {
 	Project.find({})
-		// .populate('author')
 		.then((projects) => res.json(projects))
 		.catch(next);
 });
